@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attendance Table</title>
+    
+    <style>
+        #main{
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif !important; 
+        }
+        </style>
+        <link rel="stylesheet" href="attendance table.css">
+</head>
+<body>
+    <div id="main">
+        <nav id="nav">
+            <div id="logout">
+                <a style="text-decoration: none;font-weight: 700;"href="#" id="out">Log Out</a>
+            </div>
+        </nav>
+        <div id="add">
+            <h1>Add New Student</h1>
+            <form action="#" id="new">
+                <fieldset style="border-radius: 10px;">
+                    <legend>Details</legend>
+                    <label for="name">Name :</label><input type="text"id="name"><label for="sid">SID :</label><input type="number"id="sid">
+                    <br>
+                    <br>
+                    <input type="submit" value="ADD" style="height: 20px;width: 63px; "id="ADD">
+                        
+                </fieldset>
+            </form>
+
+        </div>
+        <div id="day">
+            <label for="date"style="left: 23%;position: absolute;">Date :</label><input type="date"id="date"><label for="subject"style="position:absolute;left: 57%;">Subject :</label><input type="text"id="subject">
+        </div>
+        <div id="sheet" style="margin-top: 6%;">
+            <table id="table" border="1"style="border-radius: 1rem;">
+                <thead>
+                    <th rowspan="2"style="border-radius: 10rem;">Name</th>
+                    <th rowspan="2" style="border-radius: 10rem;">SID</th>
+                    <th colspan="2" style="border-radius: 10rem;">Attendance</th>
+                    <tr>
+                        <th style="border-radius: 10rem;">Present</th>
+                        <th style="border-radius: 10rem;">Absent</th>
+                    </tr>
+                </thead>
+            
+                <tbody  style="overflow-x: hidden;">
+
+                    <tr>
+                        <td style="border-radius: 1rem;">Lorem, ipsum.</td>
+                        <td style="border-radius: 1rem;">2213334</td>
+                        <td style="border-radius: 1rem;">
+                            
+                            <input type="radio" id="present"name ="attend"style="height:1.5rem;width:1.5rem">
+                        </td>
+                        <td style="border-radius: 1rem;">
+                            <input type="radio"id="absent"name="attend"style="height:2rem;width:1.5rem">
+                        </td>
+                        
+                    </tr>
+                </tbody>
+                
+            </table>
+                    
+        </div>
+        <div id="send"style="display:flex;justify-content:center;margin: top 3rem;">
+            <input type="button" value="UPLOAD"style="height:2rem;width: 7rem;">
+        </div>
+    </div>
+    
+</body>
+</html>

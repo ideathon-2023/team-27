@@ -1,0 +1,124 @@
+html,body{
+    height: 100%;
+    width: 100%;
+}
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: black;
+    font-weight: 700;
+}
+#main{
+    display: flex;
+    height: 100%;
+    width: 100%;
+    flex-direction: column;
+    position: relative;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-image: url(https://plus.unsplash.com/premium_photo-1677567996070-68fa4181775a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTl8fGJvb2tzfGVufDB8fDB8fHww&auto=format&fit=crop&w=600&q=60);
+    background-size: cover;
+    background-position: center;
+}
+#admin,#student{
+    height: 110px;
+    width: 100px;
+}
+nav{
+    /* background-color: aquamarine; */
+    display: flex;
+    justify-content: end;
+    /* background-color: #fff; */
+    border-width: 12px;
+    border-color: black;
+    padding: 10px;
+}
+h1{
+    position: relative;
+    /* background-color: cadetblue; */
+    left: 1%;
+    margin: 5px;
+    /* color: azure; */
+}
+#loginbox{
+    display: flex;
+    height: 330px;
+    width: 332px;
+    background-color: #ffffff64;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    justify-content: center;
+    border-width: 2px;
+    border-radius: 27px;
+    border-color: black;
+}
+#input{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* background-color: brown; */
+    margin-top: 20px;
+    position: relative;
+    top: 2%;
+}
+#detail-1,#detail-2{
+    outline: none;
+}
+#check{
+    position: absolute;
+    top: 85%;
+    left: 43%;
+    transform: translate(-50%,-50%);
+}
+#detail-3{
+    margin: 10px;
+}
+#detail-4{
+    margin: 10px;
+    position: absolute;
+    left: 42%;
+    top: 90%;
+    transform: translate(-50%,0);
+}
+#icon{
+    /* background-color: blueviolet; */
+    display: flex;
+    width: 259px;
+    height: 112px;
+    justify-content: space-evenly;
+}
+#type{
+    display: flex;
+    position: relative;
+    width: 259px;
+}
+#label1{
+    position: absolute;
+    left: 12%;
+}
+#label2{
+    position: absolute;
+    left: 63%;
+}
+a:hover{
+    color: palevioletred;
+}
+a{
+    text-decoration: none;
+    font-size: 25px;
+
+}
+input:hover{
+    border-radius: 27px;
+    border-width: 5px;
+    border-color: beige;
+}
+@media(max-width:347px){
+    #loginbox{
+        height: 301px;
+        width: 281px;
+    }
+}
