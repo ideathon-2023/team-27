@@ -15,7 +15,7 @@
 		$execval = $stmt->execute();
 		echo $execval;
 		///echo "Registration successfully...";
-		header('location:atten_table.html');
+		header('location:index.php');
 		$stmt->close();
 		$conn->close();
 
