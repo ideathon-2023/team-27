@@ -4,20 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login Page</title>
-    <link rel="stylesheet" href="main login page.css">
+    <link rel="stylesheet" href="login.css">
 </head>
 <body>
     <div id="main">
         <nav id="nav">
-            <a href="" id="back">Back</a>
+            <a href="landing_page.html" id="back">Back</a>
         </nav>
         <div id="loginbox">
-            <form action="#" id="login">
+            <form action="connect.php" id="login" method="POST">
                     <div id="choose">
                         <h1 id="heading">Choose your role</h1>
                         <div id="icon">
-                            <input type="image"id="admin"src="https://o.remove.bg/downloads/7fa76149-d538-438b-9e05-c4a5a3e44793/image-removebg-preview.png" name="adminstration" >
-                            <input type="image"id="student"src="https://o.remove.bg/downloads/13724fb1-8c6b-484a-a6aa-7024ab2c76ed/image-removebg-preview.png"name="Student">
+                            <input type="image"id="admin"src="https://cdn.iconscout.com/icon/free/png-256/professor-1426958-1208498.png" name="adminstration" >
+                            <input type="image"id="student"src="https://th.bing.com/th/id/R.b06d80c5216d4ab434a001648b9a33be?rik=%2buuxvzkpRcBi7g&riu=http%3a%2f%2fgetdrawings.com%2ffree-icon%2fstudent-icon-transparent-63.png&ehk=NQOKqMtH%2buWNJpJgPDl8tGh4fu57wCu9gh2wdTjyi%2bI%3d&risl=&pid=ImgRaw&r=0"name="Student">
                             
 
                         </div>
@@ -27,8 +27,8 @@
                         </div>
                     </div>
                     <div id="input">
-                        <input type="number" id="detail-1"name="username"autocomplete="username"placeholder="Username"><br>
-                        <input type="password" id="detail-2"name="password"autocomplete="password"placeholder="Password"><br>
+                        <input type="text" id="detail-1"name="Username"autocomplete="Username"placeholder="Username"><br>
+                        <input type="number" id="detail-2"name="SID"autocomplete="SID"placeholder="SID"><br>
                     </div>
                     <div id="check">
                         <input type="checkbox" id="detail-3"name="save"><label for="detail-3">Remember</label><br>
