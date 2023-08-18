@@ -1,7 +1,7 @@
 <?php 
 
 require_once('connect_table.php');
-$query = "SELECT * from registration";
+$query = "Select * from 'registration'";
 $result = mysqli_query($conn,$query); 
 ?>
   
