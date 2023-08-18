@@ -21,17 +21,26 @@
             </li>
             <li class="nav-item">
               <a type="button" class="btn btn-primary nav-link active" href="create.php">Add New</a>
+            <li class="nav-item">
+              <a type="button" class="nav-link" href="display.php">View Attendance</a>  
             </li>
           </ul>
         </div>
       </div>
     </nav>
+    <div >
+      <label for="" class="my-2">Date</label>
+        <input type="date" name="date" >
+    </div>
     <div class="container my-5">
-    <table class="table">
+    <form  action="connection2.php" method="POST">   
+    <table class="table table-bordered">
     <thead>
       <tr>
         <th>NAME</th>
         <th>SID</th>
+        <th>Actions</th>
+        
        
       </tr>
     </thead>
@@ -45,20 +54,41 @@
         }
         while($row=$result->fetch_assoc()){
           echo "
-      <tr>
-        <td>$row[name]</td>
-        <td>$row[sid]</td>
-       
-        
-      </tr>
-      ";
-        }
-      ?>
+          <tr>
+          <td><input class='form-check-input' type='checkbox' name='Name[]' value='$row[Name]' >$row[Name]</td>
+          <td><input class='form-check-input' type='checkbox' name='SID[]' value='$row[SID]' >$row[SID]</td>
+          <td>Present</td>
+          
+          
+          </tr>
+          </div>
+          
+          " ;
+           }  
+
+      ?>  
+     
+          
+     
+  
+  
+  
     </tbody>
-  </table>
-      </div>
+    </table>
+    <div class="text-center">
+      <input type="submit" name="submit" class="btn btn-success" value="Upload">
+          </div>
+    </div>
+    </form>
     
     <!-- Option 1: Bootstrap Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+   
+
+
+    
+ 
+
+    
   </body>
 </html>
