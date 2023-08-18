@@ -3,9 +3,13 @@
     if(isset($_POST['details'])){
         $name = $_POST['name'];
         $SID = $_POST['sid'];
+        
         $q = " INSERT INTO `crud2`(`name`, `sid`) VALUES ( '$name','$SID' )";
 
-        $query = mysqli_query($conn,$q);
+        $query = mysqli_query($conn,$q)or die('Query one is failed'.mysqli_error($conn));
+       
+       
+
     }
 ?>
 <!DOCTYPE html>
