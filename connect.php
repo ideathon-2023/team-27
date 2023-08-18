@@ -1,24 +1,20 @@
 <?php
-	
-	$Username = $_POST['Username'];
-	$SID = $_POST['SID'];
-
-	// Database connection
-	$conn = mysqli_connect('localhost','root','','final_login');
-	if(!$conn){
-		echo "$conn->connect_error";
-		die("Connection Failed : ".mysqli_connect_error());
+	$conn = mysqli_connect('localhost','root','','final_login',3306) or die ("Connection failed");
+	if(!empty($_POST['login']))
+	{
+		$Username = $_POST['Username'];
+		$Password = $_POST['Password'];
+		$query="SELECT * from registration WHERE Username='$Username' and Password='$Password' ";
+		$resu=mysqli_query($conn,$query);
+		$cou=mysqli_num_rows($resu);
+		if($cou>0)
+		{
+			header('location: index.php');
+			echo "Login successful";
+		}
+		else
+		{
+			echo "Login unsuccessful";
+		}
 	}
-	else{
-		$stmt = $conn->prepare("insert into registration(Username,SID) VALUES(?, ?)");
-		$stmt->bind_param("si", $Username, $SID);
-		$execval = $stmt->execute();
-		echo $execval;
-		///echo "Registration successfully...";
-		header('location:index.php');
-		$stmt->close();
-		$conn->close();
-
-	}
-	
 ?>
