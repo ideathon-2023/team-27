@@ -17,3 +17,4 @@ Tech Stack-
 Frontend:HTML,CSS, JAVASCRIPT
 BACKEND:PHP,SQL
 >>>>>>> main
+An Online Attendance Management System is a digital tool that helps organizations efficiently monitor and manage attendance records.
