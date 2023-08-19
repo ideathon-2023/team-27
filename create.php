@@ -56,7 +56,7 @@
  <input type="number" name="sid" class="form-control"> <br>
 
  <button class="btn btn-success" type="submit" name="details"><a href='index.php' class="text-white text-center"> Add Details </a></button><br>
- <a class="btn btn-info" type="submit" name="cancel" href="index.php"> Cancel </a><br>
+ <a class="btn btn-info" type="submit" name="cancel" href="index.php"> Back </a><br>
 
  </div>
  </form>
