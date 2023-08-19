@@ -26,20 +26,20 @@ html,body{
     width: 100px;
 }
 nav{
-    /* background-color: aquamarine; */
+    
     display: flex;
     justify-content: end;
-    /* background-color: #fff; */
+    
     border-width: 12px;
     border-color: black;
     padding: 10px;
 }
 h1{
     position: relative;
-    /* background-color: cadetblue; */
+    
     left: 1%;
     margin: 5px;
-    /* color: azure; */
+    
 }
 #loginbox{
     display: flex;
@@ -59,7 +59,7 @@ h1{
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* background-color: brown; */
+    
     margin-top: 20px;
     position: relative;
     top: 2%;
@@ -84,7 +84,7 @@ h1{
     transform: translate(-50%,0);
 }
 #icon{
-    /* background-color: blueviolet; */
+    
     display: flex;
     width: 259px;
     height: 112px;
